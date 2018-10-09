@@ -59,36 +59,6 @@ libraryDependencies += "com.twitter" %% "bijection-core" % "0.9.4"
 libraryDependencies += "org.apache.kafka" % "kafka-streams" % "0.10.0.0"
 
 
-val repositories = Seq(
-  "confluent" at "http://packages.confluent.io/maven/",
-  Resolver.sonatypeRepo("public"))
-
-libraryDependencies ++= Seq(
-
-  "io.confluent" % "kafka-avro-serializer" % "3.2.1"
-
-)
-
-//FLINK RELATED LIBRARIES
-
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-core
-libraryDependencies += "org.apache.flink" % "flink-core" % "1.4.0"
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-scala
-libraryDependencies += "org.apache.flink" %% "flink-scala" % "1.4.0"
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-scala
-libraryDependencies += "org.apache.flink" %% "flink-streaming-scala" % "1.4.0"
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-tests
-libraryDependencies += "org.apache.flink" %% "flink-tests" % "1.4.0" % Test
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-clients
-libraryDependencies += "org.apache.flink" %% "flink-clients" % "1.4.0"
-
-// https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka-0.10
-libraryDependencies += "org.apache.flink" %% "flink-connector-kafka-0.10" % "1.4.0"
 
 
 
